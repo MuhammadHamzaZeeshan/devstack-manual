@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block heading %}<h1>{{ Title }}</h1>{% endblock heading %}
+
+{% block content %}
+<div class="content-section">
+  <p>DevStack is a comprehensive learning platform designed to help developers master modern technology stacks. Whether you're building web applications, APIs, or full-stack systems, we guide you through each technology with clarity and depth.</p>
+  
+  <h3 class="section-heading">Our Mission</h3>
+  <p>We believe in breaking down complex tech stacks into digestible, practical topics. Our goal is to empower developers at every level—from beginners curious about the basics to experienced engineers exploring new frameworks.</p>
+  
+  <h3 class="section-heading">What We Offer</h3>
+  <ul class="section-list">
+    <li>Well-organized tech topics and learning paths</li>
+    <li>Clear explanations of modern development practices</li>
+    <li>Hands-on examples and real-world scenarios</li>
+    <li>A community of developers sharing knowledge</li>
+  </ul>
+  
+  <h3 class="section-heading">Get Started</h3>
+  <p>Explore our <a href="{% url 'topics' %}" class="accent-link">topics library</a> to find your next learning adventure. Happy coding!</p>
+</div>
+{% endblock content %}

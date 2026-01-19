@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block heading %}<h1>{{ Title }}</h1>{% endblock heading %}
+
+{% block content %}
+<div class="topics-grid">
+{% for topic in topics %}
+<div class="topic-card">
+    <h5>{{ topic.title }}</h5>
+    <p class="card-subtitle">Difficulty: <span style="color: var(--accent);">{{ topic.difficulty }}</span></p>
+    <p class="card-subtitle">Status: {% if topic.learned == True %}<span style="color: #10b981;">✓ Completed</span>{% else %}<span style="color: #f59e0b;">⌛ In Progress</span>{% endif %}</p>
+    <p class="card-text">{{ topic.description }}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock content %}

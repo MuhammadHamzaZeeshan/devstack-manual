@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block heading %}<h1>{{ Title }}</h1>{% endblock heading %}
+
+{% block content %}
+<div class="content-section">
+  <p style="font-size: 1.05rem;">Welcome to <strong>DevStack Manual</strong>, your ultimate guide to mastering modern technology stacks. Whether you're a beginner just starting your coding journey or an experienced developer looking to expand your skill set, we have resources tailored for you.</p>
+  
+  <p>Click <a class="accent-link" href="{% url 'topics' %}">here</a> to browse all available tech stacks and topics.</p>
+</div>
+{% endblock content %}
+
